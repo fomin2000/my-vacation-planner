@@ -2,7 +2,7 @@
 
 
 
-##Project Description
+## Project Description
 -vacation planner
 -enter location
 -recieves weather/activities/food spots
@@ -10,7 +10,7 @@
 -polished ui
 
 
-##User Story
+## User Story
 As a family trying to go on vacation
 Given a certain location/ and certain dates
 So that they are given weather and activies/food spot nearby
@@ -24,18 +24,18 @@ Given the web application
 So that the webpage have a interactive ui
 
 
-##Wireframe
+## Wireframe
+![website-sketch](./assets%20folder/images/project1sketch.jpeg)
 
 
 
-
-##API being used
+## API being used
 - yelp api
 - openweather api 
 
 
 
-##Breakdown of tasks
+## Breakdown of tasks
 -create structure of website
 -style the website
 -add functionality to the website

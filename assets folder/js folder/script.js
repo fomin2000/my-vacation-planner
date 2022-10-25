@@ -1,0 +1,1 @@
+var images = new Array('assets folder/pictures/pexels-asad-photo-maldives-3293148.jpg', )

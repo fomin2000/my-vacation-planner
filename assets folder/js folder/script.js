@@ -4,6 +4,7 @@ var corse = 'https://cors-anywhere.herokuapp.com/'
 
 
 var searchButton = document.getElementById('searchButton')
+var displayWeather = document.querySelector('.hiddenWeather')
 
 
 // function clear form
@@ -16,6 +17,7 @@ var searchButton = document.getElementById('searchButton')
 
 function getApi(e) {
     e.preventDefault()
+    displayWeather.style.display = 'block'
 
     var inputValue = document.getElementById('formInput').value
 
@@ -65,4 +67,5 @@ function getYelp(e) {
     
 }
 
-searchButton.addEventListener('click', getYelp)
+searchButton.addEventListener('click', getApi)
+

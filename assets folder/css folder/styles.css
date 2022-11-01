@@ -14,6 +14,10 @@
     
 }
 
+.second-container {
+    align-items: center;
+    justify-content: center;
+}
 
 
 .title {
@@ -34,6 +38,13 @@ form {
 
 button {
     margin-top: 20px;
+}
+
+.entire-display {
+    display: flex;
+    justify-content: center;
+    overflow: overlay;
+    
 }
 
 .weatherCards {

@@ -33,6 +33,8 @@ var rain3 = document.getElementById('chance3')
 var rain4 = document.getElementById('chance4')
 var rain5 = document.getElementById('chance5')
 
+var dirCont = document.querySelector('.directionalContainer')
+
 
 // function to set days for weather cards 
 
@@ -118,7 +120,8 @@ function getApi(e) {
 
 
         })
-
+    
+    dirCont.style.display = 'block'
 }
 
 
@@ -211,9 +214,9 @@ function getYelp(e) {
             
         }
     })
-
-
 }
+
+searchButton.addEventListener('click', getYelp)
 
 
 

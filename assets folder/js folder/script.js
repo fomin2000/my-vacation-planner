@@ -7,7 +7,44 @@ var corse = 'https://cors-anywhere.herokuapp.com/'
 var searchButton = document.getElementById('searchButton')
 var displayWeather = document.querySelector('.hiddenWeather')
 
+// min temp elements
+var ntemp1 = document.getElementById('temp1')
+var ntemp2 = document.getElementById('temp2')
+var ntemp3 = document.getElementById('temp3')
+var ntemp4 = document.getElementById('temp4')
+var ntemp5 = document.getElementById('temp5')
 
+var weekDay = moment().format('dddd')
+var day1set = moment().add(1, 'days').format('dddd')
+var day2set = moment().add(2, 'days').format('dddd')
+var day3set = moment().add(3, 'days').format('dddd')
+var day4set = moment().add(4, 'days').format('dddd')
+var day5set = moment().add(5, 'days').format('dddd')
+
+var day1Title = document.getElementById('cardDay1')
+var day2Title = document.getElementById('cardDay2')
+var day3Title = document.getElementById('cardDay3')
+var day4Title = document.getElementById('cardDay4')
+var day5Title = document.getElementById('cardDay5')
+
+var rain1 = document.getElementById('chance1')
+var rain2 = document.getElementById('chance2')
+var rain3 = document.getElementById('chance3')
+var rain4 = document.getElementById('chance4')
+var rain5 = document.getElementById('chance5')
+
+var dirCont = document.querySelector('.directionalContainer')
+
+
+// function to set days for weather cards 
+
+function setDays() {
+    day1Title.textContent = day1set
+    day2Title.textContent = day2set
+    day3Title.textContent = day3set
+    day4Title.textContent = day4set
+    day5Title.textContent = day5set
+}
 // function clear form
 
 // function render weather
@@ -16,8 +53,11 @@ var displayWeather = document.querySelector('.hiddenWeather')
 
 // function that takes in all other functions
 
+
+
 function getApi(e) {
     e.preventDefault()
+    setDays()
     displayWeather.style.display = 'block'
 
     var inputValue = document.getElementById('formInput').value
@@ -29,8 +69,59 @@ function getApi(e) {
             return response.json()
         })
         .then(function(data){
-        console.log(data)
+            console.log(data)
+
+            console.log(data.list[0].weather[0].icon)
+
+            var minTemp1 = data.list[0].main.temp
+            var conversion1 = Math.floor(((minTemp1 - 273.15) * 1.8 + 32))
+            var newTemp1 = conversion1 + ' °F'
+            ntemp1.textContent = newTemp1 
+
+            var chanceRain1 = data.list[0].pop
+            var perc1 = (chanceRain1 * 100) + '%'
+            rain1.textContent = perc1
+
+            var minTemp2 = data.list[8].main.temp
+            var conversion2 = Math.floor(((minTemp2 - 273.15) * 1.8 + 32))
+            var newTemp2 = conversion2 + ' °F'
+            ntemp2.textContent = newTemp2 
+
+            var chanceRain2 = data.list[8].pop
+            var perc2 = (chanceRain2 * 100) + '%'
+            rain2.textContent = perc2
+
+            var minTemp3 = data.list[16].main.temp
+            var conversion3 = Math.floor(((minTemp3 - 273.15) * 1.8 + 32))
+            var newTemp3 = conversion3 + ' °F'
+            ntemp3.textContent = newTemp3 
+
+            var chanceRain3 = data.list[16].pop
+            var perc3 = (chanceRain3 * 100) + '%'
+            rain3.textContent = perc3
+            
+            var minTemp4 = data.list[24].main.temp
+            var conversion4 = Math.floor(((minTemp4 - 273.15) * 1.8 + 32))
+            var newTemp4 = conversion4 + ' °F'
+            ntemp4.textContent = newTemp4 
+
+            var chanceRain4 = data.list[24].pop
+            var perc4 = (chanceRain4 * 100) + '%'
+            rain4.textContent = perc4
+            
+            var minTemp5 = data.list[32].main.temp
+            var conversion5 = Math.floor(((minTemp5 - 273.15) * 1.8 + 32))
+            var newTemp5 = conversion5 + ' °F'
+            ntemp5.textContent = newTemp5 
+
+            var chanceRain5 = data.list[32].pop
+            var perc5 = (chanceRain5 * 100) + '%'
+            rain5.textContent = perc5
+
+
         })
+    
+    dirCont.style.display = 'block'
 }
 
 
@@ -122,12 +213,10 @@ function getYelp(e) {
             
         }
     })
-
-
 }
 
-    
 searchButton.addEventListener('click', getYelp)
+<<<<<<< HEAD
             
             
 searchButton.addEventListener('click', getApi)
@@ -142,3 +231,8 @@ searchButton.addEventListener('click', getApi)
     
     
 
+=======
+
+
+
+>>>>>>> a66bec8a81cca402c72a3856092e2c539fbaef99

@@ -139,6 +139,7 @@ var priceDisplay = document.querySelector('price')
 var ratingDisplay = document.querySelector('rating')
 var urlDisplay = document.querySelector('url')
 var realDisplay = document.querySelector('.activity-display-container')
+var nextDisplay = document.querySelector('.entire-display')
 
 
 function getYelp(e) {
@@ -178,6 +179,9 @@ function getYelp(e) {
             console.log(data.businesses[i].url); 
 
             
+            // var mainHeader = document.createElement('h1');
+            // mainHeader.textContent = "Activies Nearby";
+            // nextDisplay.append(mainHeader);
 
 
             var newli = document.createElement('li');
@@ -216,8 +220,6 @@ function getYelp(e) {
 }
 
 searchButton.addEventListener('click', getYelp)
-<<<<<<< HEAD
-            
             
 searchButton.addEventListener('click', getApi)
             
@@ -231,8 +233,6 @@ searchButton.addEventListener('click', getApi)
     
     
 
-=======
 
 
 
->>>>>>> a66bec8a81cca402c72a3856092e2c539fbaef99

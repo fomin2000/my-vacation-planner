@@ -184,7 +184,6 @@ function getYelp(e) {
             newli.classList.add("current-activity-display");
             realDisplay.classList.add("p-3");
             var newP = document.createElement('h1');
-            newP.classList.add("title");
             var price = document.createElement('p');
             price.classList.add("content");
             var rating = document.createElement('p');
@@ -196,7 +195,7 @@ function getYelp(e) {
             newP.textContent = data.businesses[i].name; 
             price.textContent = data.businesses[i].price;
             rating.textContent = data.businesses[i].rating;
-            url.textContent = data.businesses[i].url;
+            url.textContent = data.businesses[i].phone;
 
             
             
@@ -217,6 +216,23 @@ function getYelp(e) {
 }
 
 searchButton.addEventListener('click', getYelp)
+<<<<<<< HEAD
+            
+            
+searchButton.addEventListener('click', getApi)
+            
 
 
 
+
+
+
+    
+    
+    
+
+=======
+
+
+
+>>>>>>> a66bec8a81cca402c72a3856092e2c539fbaef99

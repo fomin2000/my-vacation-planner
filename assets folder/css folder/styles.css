@@ -9,9 +9,7 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-
     align-items: center;
-
     justify-content: center;
     
 }
@@ -24,12 +22,14 @@
 
 .title {
     color: #ffffff;
-
     text-align: center;
-
     font-size: 2rem;
-    
 }
+
+#inputTitle {
+    color: #ffffff;
+}
+
 
 form {
     display: flex;
@@ -39,8 +39,24 @@ form {
 button {
     margin-top: 20px;
 }
+
 .entire-display {
     display: flex;
     justify-content: center;
     overflow: overlay;
+    
+}
+
+.weatherCards {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    margin: 15px;
+    width: 250px;
+}
+
+.hiddenWeather {
+    display: none;
 }

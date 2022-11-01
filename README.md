@@ -3,11 +3,11 @@
 
 
 ## Project Description
--vacation planner
--enter location
--recieves weather/activities/food spots
--saves searches
--polished ui
+- vacation planner
+- enter location
+- recieves weather/activities/food spots
+- saves searches
+- polished ui
 
 
 ## User Story
@@ -36,7 +36,7 @@ So that the webpage have a interactive ui
 
 
 ## Breakdown of tasks
--create structure of website
--style the website
--add functionality to the website
--use bulma as a css framework
+- create structure of website
+- style the website
+- add functionality to the website
+- use bulma as a css framework

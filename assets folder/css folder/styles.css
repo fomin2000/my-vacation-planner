@@ -4,14 +4,14 @@
 
 
 #main-container {
-    background-image: url(../pictures/pexels-asad-photo-maldives-3293148.jpg);
+    /* background-image: url(../pictures/pexels-asad-photo-maldives-3293148.jpg); */
     height: 100vh;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    background-color: cornflowerblue;   
 }
 
 .second-container {
@@ -64,12 +64,14 @@ button {
 
 
 .activity-display-container li {
-    border: 1px solid black;
+    border: 3px solid black;
     margin: 20px;
     /* align-content: center; */
     /* align-items: center; */
     /* justify-content: center; */
     text-align: center;
+    background-color: #ffffff;
+    box-shadow: 10px 10px;
 }
 
 .entire-display h1 {
@@ -94,5 +96,21 @@ button {
 
 .arrow {
     color: azure;
-    font-size: 30px;
+}
+
+#main-title {
+    font-family: 'Oswald', sans-serif;
+
+
+}
+
+.entire-display {
+    background-color: cornflowerblue;
+}
+
+#history {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+
 }

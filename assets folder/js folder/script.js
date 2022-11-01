@@ -6,6 +6,8 @@ var corse = 'https://cors-anywhere.herokuapp.com/'
 
 var searchButton = document.getElementById('searchButton')
 var displayWeather = document.querySelector('.hiddenWeather')
+var inputButton = document.getElementById('formInput')
+
 
 // min temp elements
 var ntemp1 = document.getElementById('temp1')
@@ -139,6 +141,8 @@ var priceDisplay = document.querySelector('price')
 var ratingDisplay = document.querySelector('rating')
 var urlDisplay = document.querySelector('url')
 var realDisplay = document.querySelector('.activity-display-container')
+var nextDisplay = document.querySelector('.entire-display')
+var activityDisplay = document.querySelector('.activities')
 
 
 function getYelp(e) {
@@ -178,7 +182,12 @@ function getYelp(e) {
             console.log(data.businesses[i].url); 
 
             
+            // var mainHeader = document.createElement('h1');
+            // mainHeader.textContent = "Activies Nearby";
+            // nextDisplay.append(mainHeader);
 
+            // var activityHeader = activityDisplay
+            // activityHeader.textContent = "Activities Nearby";
 
             var newli = document.createElement('li');
             newli.classList.add("current-activity-display");
@@ -212,21 +221,30 @@ function getYelp(e) {
 
             
         }
+        
     })
+
+    printHistory();
 }
 
 searchButton.addEventListener('click', getYelp)
             
-            
 searchButton.addEventListener('click', getApi)
             
 
+var srchHistory = document.getElementById('history')
 
-
-
+function printHistory() {
+    var history = document.createElement('p')
+    history.textContent = inputButton.value;
+    srchHistory.appendChild(history);
+}
 
 
     
     
     
+
+
+
 

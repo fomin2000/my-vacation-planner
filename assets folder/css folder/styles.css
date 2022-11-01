@@ -60,3 +60,22 @@ button {
 .hiddenWeather {
     display: none;
 }
+
+
+.activity-display-container li {
+    border: 1px solid black;
+    margin: 20px;
+    /* align-content: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.entire-display h1 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.activity-display-container {
+    width: -webkit-fill-available;
+}

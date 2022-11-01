@@ -35,4 +35,8 @@ form {
 button {
     margin-top: 20px;
 }
-
+.entire-display {
+    display: flex;
+    justify-content: center;
+    overflow: overlay;
+}

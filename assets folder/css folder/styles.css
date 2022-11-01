@@ -50,6 +50,7 @@ button {
 .weatherCards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card {

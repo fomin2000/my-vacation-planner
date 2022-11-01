@@ -216,7 +216,6 @@ function getYelp(e) {
 }
 
 searchButton.addEventListener('click', getYelp)
-<<<<<<< HEAD
             
             
 searchButton.addEventListener('click', getApi)
@@ -231,8 +230,3 @@ searchButton.addEventListener('click', getApi)
     
     
 
-=======
-
-
-
->>>>>>> a66bec8a81cca402c72a3856092e2c539fbaef99

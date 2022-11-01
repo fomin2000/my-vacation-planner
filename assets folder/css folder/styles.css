@@ -63,7 +63,6 @@ button {
 }
 
 
-<<<<<<< HEAD
 .activity-display-container li {
     border: 1px solid black;
     margin: 20px;
@@ -80,21 +79,20 @@ button {
 
 .activity-display-container {
     width: -webkit-fill-available;
-=======
-.directionalContainer {
-    text-align: center;
-    display: none;
-    margin-top: 100px;
 }
 
+.directionalContainer {
+    display: none;
+    text-align: center;
+    margin-top: 75px;
+}
 
 .activityText {
-    font-size: 24px;
     color: azure;
+    font-size: 24px;
 }
 
 .arrow {
-    font-size: 30px;
     color: azure;
->>>>>>> a66bec8a81cca402c72a3856092e2c539fbaef99
+    font-size: 30px;
 }

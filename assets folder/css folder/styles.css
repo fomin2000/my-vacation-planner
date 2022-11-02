@@ -108,9 +108,16 @@ button {
     background-color: cornflowerblue;
 }
 
-#history {
+/* #history {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
+    font-weight: bold;
+    color: white;
+    
 
+} */
+
+#second-container {
+    overflow: hidden;
 }

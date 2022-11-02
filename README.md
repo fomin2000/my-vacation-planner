@@ -37,6 +37,14 @@ So that the webpage have a interactive ui
 ## Website Screenshot
 ![website-screenshot](./assets%20folder/images/weekendPlanner.png)
 
+## Website Link
+
+https://github.com/fomin2000/my-vacation-planner
+
+## Repo Link
+
+https://github.com/fomin2000/my-vacation-planner
+
 
 ## API being used
 - yelp api

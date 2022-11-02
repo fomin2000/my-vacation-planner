@@ -143,6 +143,11 @@ var ratingDisplay = document.querySelector('rating')
 var urlDisplay = document.querySelector('url')
 var realDisplay = document.querySelector('.activity-display-container')
 
+function anotherHeader() {
+    var head = activityDisplay
+    head.textContent = "Activities Nearby"
+
+}
 
 function getYelp(e) {
     e.preventDefault()
@@ -195,6 +200,7 @@ function getYelp(e) {
             url.classList.add("content");
 
 
+
             newP.textContent = data.businesses[i].name; 
             price.textContent = data.businesses[i].price;
             rating.textContent = data.businesses[i].rating;
@@ -232,6 +238,11 @@ renderBtn.addEventListener('click', renderInfo)
 
 
 
+// function printHistory() {
+//     var history = document.createElement('p')
+//     history.textContent = inputButton.value;
+//     srchHistory.appendChild(history);
+// }
 
 
     

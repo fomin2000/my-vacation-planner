@@ -127,4 +127,12 @@ button {
     justify-content: center;
     display: flex;
     flex-direction: column;
+
+    text-align: center;
+}
+
+.infoHere {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
 }

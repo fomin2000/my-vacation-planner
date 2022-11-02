@@ -6,8 +6,6 @@ var corse = 'https://cors-anywhere.herokuapp.com/'
 
 var searchButton = document.getElementById('searchButton')
 var displayWeather = document.querySelector('.hiddenWeather')
-var inputButton = document.getElementById('formInput')
-
 
 // min temp elements
 var ntemp1 = document.getElementById('temp1')
@@ -35,7 +33,10 @@ var rain3 = document.getElementById('chance3')
 var rain4 = document.getElementById('chance4')
 var rain5 = document.getElementById('chance5')
 
-var dirCont = document.querySelector('.directionalContainer')
+var formInput = document.getElementById('formInput')
+var infoPull = document.querySelector('.infoHere')
+var renderedInfoBox = document.querySelector('.renderedInfo')
+var renderBtn = document.querySelector('.renderBtn')
 
 
 // function to set days for weather cards 
@@ -122,8 +123,8 @@ function getApi(e) {
 
 
         })
-    
-    dirCont.style.display = 'block'
+
+    storeInfo()
 }
 
 
@@ -185,12 +186,7 @@ function getYelp(e) {
             console.log(data.businesses[i].url); 
 
             
-            // var mainHeader = document.createElement('h1');
-            // mainHeader.textContent = "Activies Nearby";
-            // nextDisplay.append(mainHeader);
 
-            // var activityHeader = activityDisplay
-            // activityHeader.textContent = "Activities Nearby";
 
             var newli = document.createElement('li');
             newli.classList.add("current-activity-display");
@@ -218,25 +214,29 @@ function getYelp(e) {
             newli.appendChild(url);
             realDisplay.appendChild(newli);
 
-
-
-
-
-
-            
         }
-        
     })
+}
 
-    printHistory();
+function storeInfo() {
+    var savedInfo = formInput.value
+    localStorage.setItem('info', savedInfo)
+}
+
+function renderInfo() {
+    var pulledInfo = localStorage.getItem('info')
+    infoPull.textContent = pulledInfo
+    renderedInfoBox.style.display = 'block'
 }
 
 searchButton.addEventListener('click', getYelp)
             
+            
 searchButton.addEventListener('click', getApi)
             
+renderBtn.addEventListener('click', renderInfo)
 
-var srchHistory = document.getElementById('history')
+
 
 // function printHistory() {
 //     var history = document.createElement('p')
@@ -248,7 +248,4 @@ var srchHistory = document.getElementById('history')
     
     
     
-
-
-
 

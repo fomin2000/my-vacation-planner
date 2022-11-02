@@ -83,21 +83,6 @@ button {
     width: -webkit-fill-available;
 }
 
-.directionalContainer {
-    display: none;
-    text-align: center;
-    margin-top: 75px;
-}
-
-.activityText {
-    color: azure;
-    font-size: 24px;
-}
-
-.arrow {
-    color: azure;
-}
-
 #main-title {
     font-family: 'Oswald', sans-serif;
 
@@ -120,4 +105,26 @@ button {
 
 #second-container {
     overflow: hidden;
+}
+
+.storage {
+    margin-bottom: 100px;
+}
+
+.renderBtn {
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.renderedInfo {
+    display: none;
+}
+
+.storage {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }

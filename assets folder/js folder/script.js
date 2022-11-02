@@ -170,7 +170,7 @@ function getYelp(e) {
         },
 
         error: function() {
-            alert('no')
+           
         }
 
     }).then(function(data){

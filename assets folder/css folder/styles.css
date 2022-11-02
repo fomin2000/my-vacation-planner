@@ -113,4 +113,11 @@ button {
 
 .renderedInfo {
     display: none;
+    text-align: center;
+}
+
+.infoHere {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
 }

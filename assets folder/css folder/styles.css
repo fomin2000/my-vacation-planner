@@ -60,6 +60,8 @@ button {
     margin: 15px;
     width: 250px;
     box-shadow: 10px 10px;
+    border-radius: 50%;
+    text-align: center;
     
 }
 
@@ -77,6 +79,9 @@ button {
     text-align: center;
     background-color: #ffffff;
     box-shadow: 10px 10px;
+    width: 300px;
+    height: 350px;
+    padding: 50px
 
 }
 
@@ -87,6 +92,9 @@ button {
 
 .activity-display-container {
     width: -webkit-fill-available;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #main-title {

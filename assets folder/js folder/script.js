@@ -155,7 +155,7 @@ function getYelp(e) {
     var city = $(this).siblings('#formInput').val()
     
     $.ajax({
-        url: 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?limit=10&location='+city,
+        url: 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?limit=12&location='+city,
         type: "GET",
         headers: {
             "accept": "application/json",
